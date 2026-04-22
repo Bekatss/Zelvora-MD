@@ -72,6 +72,7 @@ const newsCommand = require('./commands/news');
 const kickCommand = require('./commands/kick');
 const simageCommand = require('./commands/simage');
 const attpCommand = require('./commands/attp');
+const { bratCommand, bratcCommand, bratfCommand, bratcfCommand } = require('./commands/brat');
 const { startHangman, guessLetter } = require('./commands/hangman');
 const { startTrivia, answerTrivia } = require('./commands/trivia');
 const { complimentCommand } = require('./commands/compliment');
@@ -147,7 +148,7 @@ const soraCommand = require('./commands/sora');
 global.packname = settings.packname;
 global.author = settings.author;
 global.channelLink = "https://whatsapp.com/channel/0029Va90zAnIHphOuO8Msp3A";
-global.ytch = "Mr Unique Hacker";
+global.ytch = "Axel";
 
 // Add this near the top of main.js with other global configurations
 const channelInfo = {
@@ -155,8 +156,8 @@ const channelInfo = {
         forwardingScore: 1,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
-            newsletterJid: '120363161513685998@newsletter',
-            newsletterName: 'KnightBot MD',
+            // newsletterJid: '120363161513685998@newsletter',
+            // newsletterName: 'Zelvora',
             serverMessageId: -1
         }
     }
@@ -442,6 +443,22 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 break;
             case userMessage.startsWith('.attp'):
                 await attpCommand(sock, chatId, message);
+                break;
+
+            case userMessage.startsWith('.bratcf'):
+                await bratcfCommand(sock, chatId, message);
+                break;
+
+            case userMessage.startsWith('.bratf'):
+                await bratfCommand(sock, chatId, message);
+                break;
+
+            case userMessage.startsWith('.bratc'):
+                await bratcCommand(sock, chatId, message);
+                break;
+
+            case userMessage.startsWith('.brat'):
+                await bratCommand(sock, chatId, message);
                 break;
 
             case userMessage === '.settings':

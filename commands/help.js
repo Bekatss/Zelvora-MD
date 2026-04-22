@@ -7,7 +7,7 @@ async function helpCommand(sock, chatId, message) {
 ╔═══════════════════╗
    *🤖 ${settings.botName || 'KnightBot-MD'}*  
    Version: *${settings.version || '3.0.0'}*
-   by ${settings.botOwner || 'Mr Unique Hacker'}
+   by ${settings.botOwner || 'Axel'}
    YT : ${global.ytch}
 ╚═══════════════════╝
 
@@ -89,6 +89,10 @@ async function helpCommand(sock, chatId, message) {
 ╔═══════════════════╗
 🎨 *Image/Sticker Commands*:
 ║ ➤ .blur <image>
+║ ➤ .brat <text>
+║ ➤ .bratc <text>
+║ ➤ .bratcf <text>
+║ ➤ .bratf <text>
 ║ ➤ .simage <reply to sticker>
 ║ ➤ .sticker <reply to image>
 ║ ➤ .removebg
@@ -237,8 +241,8 @@ Join our channel for updates:`;
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD',
+                        // newsletterJid: '120363161513685998@newsletter',
+                        // newsletterName: 'Zelvora',
                         serverMessageId: -1
                     }
                 }
@@ -251,8 +255,8 @@ Join our channel for updates:`;
                     forwardingScore: 1,
                     isForwarded: true,
                     forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'KnightBot MD by Mr Unique Hacker',
+                        // newsletterJid: '120363161513685998@newsletter',
+                        // newsletterName: 'Zelvora',
                         serverMessageId: -1
                     } 
                 }

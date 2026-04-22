@@ -5,8 +5,19 @@
   "antibadword": {},
   "warnings": {},
   "sudo": [],
-  "welcome": {},
+  "welcome": {
+    "120363427890723043@g.us": {
+      "enabled": true,
+      "message": "━━━━━━━━━━ ♛ ━━━━━━━━━━\nINTRO CARD (KARTU PENGENALAN)\n\nWELCOME TO ZELVORA SOCIETY\n\nIntroduce yourself:\n\n- NAME(NAMA) :\n- AGE(UMUR) :\n- GENDER(KELAMIN) :\n- CITY(ASAL KOTA) :\n\n📷 PHOTO REQUIRED (REAL PICT/FOTO ASLI - PAP)\n\nKeep it simple and clear.\n\nStay respectful, feel comfortable, and enjoy your time here.\n━━━━━━━━━━ ♛ ━━━━━━━━━━"
+    }
+  },
   "goodbye": {},
   "chatbot": {},
-  "autoReaction": false
+  "autoReaction": false,
+  "antitag": {
+    "120363427890723043@g.us": {
+      "enabled": true,
+      "action": "delete"
+    }
+  }
 }
